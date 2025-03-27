@@ -143,6 +143,59 @@ img {
   border-right: none;
   color: var(--main-color);
 }
+.header__menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 1000px) {
+  .header__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 0;
+  }
+  .header__inner-logo {
+    width: 180px;
+  }
+  .header__menu-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .header__inner-list {
+    position: absolute;
+    display: none;
+    top: 80px;
+    right: 0;
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+    background: #f9f9f9;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .header__inner-list.active {
+    display: flex;
+  }
+
+  .header__inner-item {
+    width: 100%;
+  }
+  .header__inner-item-link {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    border-right: none;
+  }
+}
 /*------------------------ Get A Quote ------------------- */
 .get-quote {
   padding: 120px 0 150px;
@@ -223,6 +276,19 @@ textarea:focus,
 input[type="radio"]:focus {
   border-color: var(--second-color);
   outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .get-quote {
+    padding: 60px 0 90px;
+  }
+}
+@media only screen and (max-width: 532px) {
+  .get-quote__inner-input-wrapper {
+    flex-direction: column;
+  }
+  .get-quote__inner-title {
+    font-size: 22px;
+  }
 }
 /* ------------------------ About Us ------------------ */
 .about {
@@ -358,12 +424,32 @@ input[type="radio"]:focus {
   cursor: pointer;
   color: #fff;
   padding: 10px 24px;
-  min-width: 250px;
   font-size: 18px;
   height: auto;
   border: 1px solid var(--second-color);
 }
-
+.apply__main-top-img {
+  width: 230px;
+  height: auto;
+}
+@media only screen and (max-width: 768px) {
+  .apply {
+    padding: 60px 0;
+  }
+}
+@media only screen and (max-width: 390px) {
+  .apply {
+    padding: 40px 0;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .apply__main-bottom-text:nth-child(3) {
+    display: none;
+  }
+  .apply__main-top-img {
+    width: 150px;
+  }
+}
 /* ---------------- Partners ------------ */
 .partners {
   margin: 120px 0;

@@ -19,57 +19,41 @@
               class="header__inner-logo"
             />
           </a>
-          <ul class="header__inner-list">
+          <button class="header__menu-btn" id="menuBtn">&#9776;</button>
+          <ul class="header__inner-list" id="menuList">
             <li class="header__inner-item">
               <a
                 href="#about"
                 class="header__inner-item-link header__inner-item-link--active-first"
+                >About Us</a
               >
-                About Us
-              </a>
             </li>
             <li class="header__inner-item">
-              <a href="#quote" class="header__inner-item-link"> Get A Quote </a>
+              <a href="#quote" class="header__inner-item-link">Get A Quote</a>
             </li>
             <li class="header__inner-item">
-              <a href="#apply" class="header__inner-item-link">
-                Apply to Drive
-              </a>
+              <a href="#apply" class="header__inner-item-link"
+                >Apply to Drive</a
+              >
             </li>
             <li class="header__inner-item">
-              <a href="#weWork" class="header__inner-item-link">
-                Companies we work
-              </a>
+              <a href="#weWork" class="header__inner-item-link"
+                >Companies we work</a
+              >
             </li>
             <li class="header__inner-item">
               <a
                 href="#contact"
                 class="header__inner-item-link header__inner-item-link--active-last"
+                >Contact Us</a
               >
-                Contact Us
-              </a>
             </li>
           </ul>
         </div>
       </div>
     </header>
-    <main>
-      <!-- <section class="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <video
-              class="Hero_background__zy7o0"
-              playsinline=""
-              autoplay=""
-              loop=""
-            >
-              <source src="/assets/videos/hero-bgc.webm" type="video/webm" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      </section> -->
 
+    <main>
       <section class="about" id="about">
         <div class="container">
           <div class="about__inner">
@@ -341,6 +325,7 @@
             <div class="apply__main">
               <div class="apply__main-top">
                 <img
+                class="apply__main-top-img"
                   width="230"
                   height="auto"
                   src="./images/logo-1.png"
@@ -560,5 +545,6 @@
         </div>
       </section>
     </main>
+    <script src="./js/script.js"></script>
   </body>
 </html>
