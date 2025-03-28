@@ -99,7 +99,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-button {
+.button-animatsiya {
   background-color: var(--second-color);
   color: white;
   padding: 12px 24px;
@@ -111,14 +111,14 @@ button {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+.button-animatsiya:hover {
   background-color: #a37602;
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   border: 1px solid #a37602;
 }
 
-button:active {
+.button-animatsiya:active {
   transform: scale(0.95);
   background-color: #a77801;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -884,5 +884,35 @@ input[type="radio"]:focus {
 
   .partners__list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 80px;
+  height: 80px;
+  border: 8px solid transparent;
+  border-top: 8px solid var(--second-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
