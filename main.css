@@ -846,6 +846,9 @@ input[type="radio"]:focus {
     width: 100%;
     font-size: 14px;
   }
+  .get {
+    padding: 70px 0;
+  }
 }
 
 @media screen and (max-width: 1024px) {
